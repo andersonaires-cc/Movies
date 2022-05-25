@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\christina Ferreira\\source\\repos\\MvcMovie\\MvcMovie\\MvcMovie.csproj": {}
+    "D:\\Felipe\\Trabalho\\Estagiários\\Anderson\\movies\\Movies\\MvcMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\christina Ferreira\\source\\repos\\MvcMovie\\MvcMovie\\MvcMovie.csproj": {
+    "D:\\Felipe\\Trabalho\\Estagiários\\Anderson\\movies\\Movies\\MvcMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\christina Ferreira\\source\\repos\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "D:\\Felipe\\Trabalho\\Estagiários\\Anderson\\movies\\Movies\\MvcMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "C:\\Users\\christina Ferreira\\source\\repos\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
-        "packagesPath": "C:\\Users\\christina Ferreira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\christina Ferreira\\source\\repos\\MvcMovie\\MvcMovie\\obj\\",
+        "projectPath": "D:\\Felipe\\Trabalho\\Estagiários\\Anderson\\movies\\Movies\\MvcMovie\\MvcMovie.csproj",
+        "packagesPath": "C:\\Users\\black\\.nuget\\packages\\",
+        "outputPath": "D:\\Felipe\\Trabalho\\Estagiários\\Anderson\\movies\\Movies\\MvcMovie\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\christina Ferreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\black\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

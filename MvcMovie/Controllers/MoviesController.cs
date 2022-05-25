@@ -10,8 +10,10 @@ using MvcMovie.Models;
 
 namespace MvcMovie.Controllers
 {
+
     public class MoviesController : Controller
     {
+
         private readonly MvcMovieContext _context;
 
         public MoviesController(MvcMovieContext context)
@@ -86,7 +88,7 @@ namespace MvcMovie.Controllers
         // POST: Movies/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPatch]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
         {
@@ -137,7 +139,7 @@ namespace MvcMovie.Controllers
         }
 
         // POST: Movies/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpDelete, ActionName("")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
