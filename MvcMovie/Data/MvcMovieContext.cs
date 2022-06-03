@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using MvcMovie.Models;
 
 namespace MvcMovie.Data
@@ -14,6 +10,15 @@ namespace MvcMovie.Data
         {
         }
 
-        public DbSet<MvcMovie.Models.Movie>? Movie { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<GenreMovie>()
+                .HasKey(gm => new { gm.genreId, gm.movieId });
+        }
+
+        public DbSet<Movie>? Movie { get; set; }
+        public DbSet<Genre>? Genre { get; set; }
+        public DbSet<GenreMovie>? genreMovies { get; set; }
+
     }
 }

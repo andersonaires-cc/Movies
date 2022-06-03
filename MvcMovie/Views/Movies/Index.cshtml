@@ -9,6 +9,15 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<div class="row d-flex justify-content-start px-4">
+        <a asp-action="Index" asp-route-id=@null class="btn btn-info col-1 mx-3">All</a>
+    @foreach(var genre in ViewBag.genreList)
+    {
+        <a asp-action="Index" asp-route-id="@genre.Id" class="btn btn-info col-1 mx-3">@genre</a>
+    }
+</div>
+
 <table class="table">
     <thead>
         <tr>
@@ -19,7 +28,7 @@
                 @Html.DisplayNameFor(model => model.ReleaseDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Genre)
+                @Html.DisplayNameFor(model => model.genreMovie)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Price)
@@ -37,7 +46,16 @@
                 @Html.DisplayFor(modelItem => item.ReleaseDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Genre)
+
+                    @for(int i = 0; i < item.genreMovie.Count; i++)
+                    {
+                        @item.genreMovie.ElementAt(i).genre.Name
+                        if(i < item.genreMovie.Count - 1)
+                        {
+                          @Html.Raw(", ")
+                        }
+                    }
+
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
